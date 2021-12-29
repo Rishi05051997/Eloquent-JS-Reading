@@ -3,3 +3,14 @@ Above Page No 34
 
 DATE -->> 26 Dec 2021 Chapter - 2 Page (31) Completed -->> 
 Above Page No 51
+
+DATE -->> 27 Dec 2021 Chapter - 48 Page (31) Completed -->> 
+Above Page No 60
+
+DATE -->> 28 Dec 2021 Chapter - 48 Page (56) Completed -->> 
+Above Page No 68
+
+DATE -->> 29 Dec 2021 Chapter - 48 Page (65) Completed -->> 
+Above Page No 77 (Start from MUTABILITY)
+
+code solution --->>> https://eloquentjavascript.net/code
