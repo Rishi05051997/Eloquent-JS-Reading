@@ -13,4 +13,10 @@ Above Page No 68
 DATE -->> 29 Dec 2021 Chapter - 48 Page (65) Completed -->> 
 Above Page No 77 (Start from MUTABILITY)
 
+DATE -->> 3 Jan 2022 Chapter - 4 Page (68) Completed -->> 
+Above Page No 81 (Start from COMPUTATIONAL CORELATIONAL)
+
+DATE -->> 4 Jan 2022 Chapter - 4 Page (77) Completed -->> 
+Above Page No 89 (Start from MATH OBJECT)
+
 code solution --->>> https://eloquentjavascript.net/code

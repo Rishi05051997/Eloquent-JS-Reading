@@ -1,0 +1,71 @@
+Object -->>
+Object.keys();
+Object.values();
+Object.assign();
+
+array shift & unshift video please watch 
+push()-->> add result to the end of array
+pop()-->> remove last element from an array & return the result
+shift() -->> remove 1st element of an array
+unshift("g") --->> add the result at the start of an array
+indexOf() -->>[1,2,3,4,5].indexOf(3) --->>> start searching result from the start of an 
+array if it is present then it will return the index otherwise -1
+
+lastIndexOf() --->>[1,2,3,4,5].lastIndexOf(3) -->> start searching from the end of an array
+
+slice()-->> [1,2,3,4,5].slice(2,4) -->> [3,4] --> Another fundamental array method 
+is slice, which takes start and end indices and returns an 
+array that has only the elements between them. The start
+index is inclusive, the end index exclusive
+slice()-->> [1,2,3,4,5].slice(2) -->> [3,4,5] -->>When the end index is not given, 
+slice will take all of the elements after the start index. You can 
+also omit the start index to copy the entire array.
+
+concat() -->> When the end index is not given, 
+slice will take all of the elements after the start index. You 
+can also omit the start index to copy the entire array.
+
+
+String --->>
+1. slice method -->> similar to array
+2. indexOf() --->> we can give here more then one character as input where 
+as in case of an array it is not possible
+3. trim() -->> it removes emoves whitespace (spaces, newlines, 
+tabs, and similar characters) from the start and end of a string. 
+4. padStart() ( New ***) -->> takes the desired length and padding 
+character as arguments.
+console.log(String(6).padStart(3, "0"));
+// → 006
+5. split() -->> we can split a string into saveral occurances & it will
+an array of that all occurances 
+6. join() -->> we can join all occurances which did during spliting 
+of a string
+
+ex...,,,
+let sentence = "Secretarybirds specialize in stomping";
+let words = sentence.split(" ");
+console.log(words);
+// → ["Secretarybirds", "specialize", "in", "stomping"]
+console.log(words.join(". "));
+// → Secretarybirds. specialize. in. stomping
+
+7.repeat() -->> A string can be repeated with the repeat method, which creates a new string
+containing multiple copies of the original string, glued together.
+
+console.log("LA".repeat(3));
+// → LALALA
+
+****Rest parameter*****
+It can be useful for a function to accept any number of arguments. For example,
+Math.max computes the maximum of all the arguments it is given.
+
+This “spreads” out the array into the function call, passing 
+its elements as separate arguments. It is possible to include an array 
+like that along with other arguments, as in max(9, ...numbers, 2).
+Square bracket array notation similarly allows the triple-dot operator 
+to spread another array into the new array.
+
+let words = ["never", "fully"];
+console.log(["will", ...words, "understand"]);
+// → ["will", "never", "fully", "understand"]
+
