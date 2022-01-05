@@ -14,7 +14,7 @@ array if it is present then it will return the index otherwise -1
 lastIndexOf() --->>[1,2,3,4,5].lastIndexOf(3) -->> start searching from the end of an array
 
 slice()-->> [1,2,3,4,5].slice(2,4) -->> [3,4] --> Another fundamental array method 
-is slice, which takes start and end indices and returns an 
+is slice, which takes start and end indices and returns an 
 array that has only the elements between them. The start
 index is inclusive, the end index exclusive
 slice()-->> [1,2,3,4,5].slice(2) -->> [3,4,5] -->>When the end index is not given, 
@@ -68,4 +68,120 @@ to spread another array into the new array.
 let words = ["never", "fully"];
 console.log(["will", ...words, "understand"]);
 // → ["will", "never", "fully", "understand"]
+
+
+******* Math Object *******
+Math.max() --->>> returns maximum value from an array
+Math.min() --->>> returns minimum value from an array
+Math.sqrt(25) --->> 5 -->> return square roof of a given value
+if we need to do trigonometry 
+Math.cos(angle), Math.sin(angle), Math.tan(angle), Math.pi()
+
+Math.random() --->> returns random value between 0 to 1
+Math.floor() ---->> (which rounds down to the nearest whole number) 
+on the result of Math.random.
+
+console.log(Math.floor(Math.random() * 10));
+// → 2
+
+Math.ceil() --->>  “ceiling”, which rounds up to a whole number 
+Math.abs() --->> Math.abs, which takes the absolute value of a number, 
+meaning it negates negative values but leaves positive ones as 
+they are.
+
+Math.abs(-15) -->> 15
+
+******* Destructuring *******
+The object destructuring is a useful JavaScript feature to 
+extract properties from objects and bind them to variables.
+
+What's better, object destructuring can extract multiple 
+properties in one statement, can access properties from nested 
+objects, and can set a default value if the property doesn't exist.
+
+***** Note that if you try to destructure null or undefined, you get an error, much
+as you would if you directly try to access a property of those values.
+
+Ex...,,
+Simple way to access a property of an object is using dot operator
+var hero = {
+  name: 'Batman',
+  realName: 'Bruce Wayne'
+};
+var name     = hero.name;
+var realName = hero.realName;
+name;     // => 'Batman',
+realName; // => 'Bruce Wayne'
+
+
+Most Precious way is using Destructuring
+const hero = {
+  name: 'Batman',
+  realName: 'Bruce Wayne'
+};
+const { name, realName } = hero;
+name;     // => 'Batman',
+realName; // => 'Bruce Wayne'
+
+const { name, realName } = hero is an object destructuring assignment
+
+1. Property to Variable 
+const { prop } = object;
+2. Multiple Properties
+const {prop1, prop2, ..., propN} = object;
+3. Default Value 
+const {prop = "Defualt"} = object;
+4. Alias 
+const { prop: myProp } = object;
+5. Deep Property
+const { prop: { deepProp } } = object;
+6. Dynamic Property Name 
+const { [propName] : myProp } = object;
+
+for more info about destructuring read this article 
+https://dmitripavlutin.com/javascript-object-destructuring/#:~:text=How%20to%20Use%20Object%20Destructuring%20in%20JavaScript%201,a%20dynamic%20name%20property.%20...%20More%20items...%20
+
+
+****** JSON ******
+A popular serialization format is called JSON (pronounced
+“Jason”), which stands for JavaScript Object Notation. It is widely used as a
+data storage and communication format on the Web, even in languages other
+than JavaScript.
+
+JSON looks similar to JavaScript’s way of writing arrays and objects, with a
+few restrictions. All property names have to be surrounded by double quotes,
+and only simple data expressions are allowed—no function calls, bindings, or
+anything that involves actual computation. Comments are not allowed in
+JSON.
+
+JavaScript gives us the functions JSON.stringify and 
+JSON.parse to convert data to and from this format. 
+The first takes a JavaScript value and returns a 
+JSON-encoded string. The second takes such a 
+string and converts it to the value it encodes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
